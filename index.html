@@ -1,109 +1,182 @@
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mi Amore♡</title>
 
 <style>
-:root {
-  --ink: #b86f83;
-  --soft: #e9aebb;
-  --pale: #f8e9eb;
-  --paper: #fffaf7;
-  --text: #855966;
-}
-
 * { box-sizing: border-box; }
 
 body {
   margin: 0;
-  min-height: 100vh;
-  display: grid;
-  place-items: center;
-  background: radial-gradient(circle at 50% 18%, #fff 0, #fffaf7 45%, #f8e9eb 100%);
-  font-family: Georgia, 'Times New Roman', serif;
-  color: var(--text);
+  background: #faf6f1;
+  color: #665653;
+  font-family: Georgia, serif;
 }
 
 main {
-  width: min(92vw, 520px);
-  padding: 34px 22px 28px;
+  max-width: 760px;
+  margin: auto;
+  padding: 45px 22px 70px;
+}
+
+header {
   text-align: center;
+  margin-bottom: 25px;
 }
 
-.eyebrow {
-  font: 11px/1.4 Arial, sans-serif;
-  letter-spacing: .24em;
-  text-transform: uppercase;
-  color: #bd8795;
-}
-
-.title {
-  font-size: clamp(32px, 8vw, 45px);
-  font-weight: 400;
-  margin: 12px 0 5px;
-  color: #a9687d;
+h1 {
+  font-size: clamp(32px, 7vw, 45px);
+  font-weight: normal;
+  color: #956d72;
+  margin-bottom: 8px;
 }
 
 .subtitle {
-  font-size: 15px;
-  font-style: italic;
-  margin: 0 0 12px;
-  color: #b1848e;
+  font-size: 13px;
+  letter-spacing: 2px;
+  color: #ad9290;
 }
 
-.art {
+.vase-area {
+  text-align: center;
+  background: #f4e9e5;
+  border-radius: 180px 180px 25px 25px;
+  padding: 25px 12px 20px;
+  margin: 30px auto;
+}
+
+#bouquet {
   width: 100%;
-  max-width: 420px;
-  margin: 0 auto;
+  max-width: 440px;
+  height: auto;
   display: block;
-  filter: drop-shadow(0 12px 15px #d9aab322);
+  margin: auto;
 }
 
 .counter {
-  font-size: 14px;
-  letter-spacing: .13em;
-  color: #b47789;
-  margin: 2px 0 10px;
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: #a47d7d;
+  margin-top: 8px;
 }
 
-.message {
-  font-size: 17px;
+.intro {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.8;
   font-style: italic;
-  line-height: 1.6;
-  margin: 8px auto 22px;
-  max-width: 330px;
+  margin: 30px auto 45px;
+  max-width: 430px;
 }
 
-.heart { color: #d58c9e; }
+h2 {
+  font-size: 25px;
+  font-weight: normal;
+  color: #956d72;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.section-note {
+  text-align: center;
+  color: #aa9290;
+  font-size: 13px;
+  margin-bottom: 28px;
+}
+
+.entry {
+  background: #fffdfb;
+  border: 1px solid #eee3df;
+  border-radius: 16px;
+  padding: 22px;
+  margin: 15px 0;
+  box-shadow: 0 5px 18px #876c6810;
+}
+
+.entry-date {
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  color: #b18b8b;
+  text-transform: uppercase;
+}
+
+.entry-flower {
+  font-size: 27px;
+  margin: 12px 0 8px;
+}
+
+.entry-message {
+  font-size: 16px;
+  line-height: 1.8;
+  white-space: pre-wrap;
+}
+
+.add-section {
+  background: #f4e9e5;
+  border-radius: 20px;
+  padding: 25px;
+  margin-top: 45px;
+}
+
+.add-section h2 {
+  margin-top: 0;
+}
+
+label {
+  display: block;
+  font-size: 13px;
+  margin: 17px 0 7px;
+  color: #8b6b6b;
+}
+
+input, textarea, select {
+  width: 100%;
+  border: 1px solid #e5d3ce;
+  border-radius: 10px;
+  background: #fffdfb;
+  padding: 12px;
+  color: #665653;
+  font-family: Georgia, serif;
+  font-size: 15px;
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
 
 button {
-  border: 1px solid #d9a2b0;
-  background: #fff8f7;
-  color: #a9687d;
-  border-radius: 99px;
-  padding: 12px 20px;
-  font: 12px Arial, sans-serif;
-  letter-spacing: .12em;
-  text-transform: uppercase;
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  border: none;
+  border-radius: 30px;
+  background: #b8878b;
+  color: white;
+  padding: 14px;
+  font-family: Georgia, serif;
+  font-size: 15px;
   cursor: pointer;
 }
 
-button:hover { background: #f8e9eb; }
+button:hover { background: #a5757a; }
 
-.hint {
-  font: 11px/1.5 Arial, sans-serif;
-  color: #b28c94;
-  margin: 14px auto 0;
-  max-width: 330px;
+footer {
+  text-align: center;
+  color: #b39a96;
+  font-size: 12px;
+  margin-top: 45px;
+  letter-spacing: 1px;
 }
 
-.footer {
-  font-size: 12px;
-  color: #c2949e;
-  margin-top: 28px;
+.empty {
+  text-align: center;
+  color: #aa9290;
+  font-style: italic;
+  padding: 20px;
 }
 </style>
 </head>
@@ -111,111 +184,209 @@ button:hover { background: #f8e9eb; }
 <body>
 <main>
 
-<div class="eyebrow">a little garden, just for you</div>
+<header>
+  <h1>Flowers for You ♡</h1>
+  <div class="subtitle">A LITTLE GARDEN OF THOUGHTS</div>
+</header>
 
-<h1 class="title">Flowers for You</h1>
-<p class="subtitle">Good morning, sunshine♡</p>
+<section class="vase-area">
+  <svg id="bouquet" viewBox="0 0 420 340"
+       xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <g id="tulip">
+        <path d="M0 0 Q-23 -22 -12 -42 Q-4 -29 0 -38
+                 Q8 -29 13 -43 Q26 -20 0 0Z"
+              fill="#dca3a5" stroke="#a9787c" stroke-width="1.5"/>
+      </g>
+      <g id="cosmos">
+        <g fill="#e6b7b4" stroke="#b98b8c" stroke-width="1">
+          <ellipse rx="7" ry="18" cy="-13"/>
+          <ellipse rx="7" ry="18" cy="-13" transform="rotate(45)"/>
+          <ellipse rx="7" ry="18" cy="-13" transform="rotate(90)"/>
+          <ellipse rx="7" ry="18" cy="-13" transform="rotate(135)"/>
+          <ellipse rx="7" ry="18" cy="-13" transform="rotate(180)"/>
+          <ellipse rx="7" ry="18" cy="-13" transform="rotate(225)"/>
+          <ellipse rx="7" ry="18" cy="-13" transform="rotate(270)"/>
+          <ellipse rx="7" ry="18" cy="-13" transform="rotate(315)"/>
+        </g>
+        <circle r="7" fill="#d5ae72"/>
+      </g>
+    </defs>
 
-<svg class="art" viewBox="0 0 420 430" role="img" aria-label="A blush pink line-art vase holding delicate flowers">
+    <g stroke="#84917b" stroke-width="3" fill="none"
+       stroke-linecap="round">
+      <path d="M210 250 Q170 160 125 80"/>
+      <path d="M210 250 Q210 150 210 65"/>
+      <path d="M210 250 Q255 150 300 95"/>
+      <path d="M210 250 Q160 190 75 145"/>
+      <path d="M210 250 Q270 190 345 155"/>
+    </g>
 
-<defs>
-<linearGradient id="vase" x1="0" x2="1">
-<stop stop-color="#f8dce2"/>
-<stop offset=".5" stop-color="#fcebef"/>
-<stop offset="1" stop-color="#f4d2da"/>
-</linearGradient>
-</defs>
+    <g fill="#9ba58c">
+      <path d="M169 174 Q120 145 113 160 Q140 185 169 174Z"/>
+      <path d="M244 175 Q285 145 291 164 Q268 189 244 175Z"/>
+      <path d="M169 205 Q125 185 120 200 Q140 222 169 205Z"/>
+      <path d="M254 207 Q293 185 300 202 Q279 225 254 207Z"/>
+    </g>
 
-<!-- stems -->
-<g fill="none" stroke="#9eaa83" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
-<path d="M210 286 Q196 218 155 118 Q146 98 143 75"/>
-<path d="M211 286 Q218 207 256 131 Q265 111 270 87"/>
-<path d="M210 286 Q209 210 206 145 Q205 121 207 101"/>
-<path d="M181 218 Q151 193 139 177 Q160 174 181 218"/>
-<path d="M232 213 Q257 187 277 184 Q267 207 232 213"/>
-<path d="M198 184 Q176 165 176 147 Q195 153 198 184"/>
-</g>
+    <use href="#tulip" transform="translate(125 82) scale(1.1)"/>
+    <use href="#cosmos" transform="translate(210 65) scale(1.05)"/>
+    <use href="#tulip" transform="translate(300 96) rotate(12)"/>
+    <use href="#cosmos" transform="translate(75 145) scale(.8)"/>
+    <use href="#cosmos" transform="translate(345 155) scale(.8)"/>
 
-<!-- blossoms -->
-<g fill="#fffaf7" stroke="#c77e91" stroke-width="2" stroke-linejoin="round">
+    <path d="M157 235 L263 235 L250 318
+             Q210 334 170 318Z"
+          fill="#dcaeb0" stroke="#b8878b" stroke-width="2"/>
+    <ellipse cx="210" cy="235" rx="53" ry="9"
+             fill="#e8c4c3" stroke="#b8878b" stroke-width="2"/>
+    <path d="M181 276 Q210 285 239 276"
+          fill="none" stroke="#efdad7" stroke-width="2"/>
+    <text x="210" y="302" text-anchor="middle"
+          font-size="15" fill="#fff9f5">♡</text>
+  </svg>
 
-<!-- left tulip -->
-<path d="M143 78 C126 64 127 43 137 32 C143 44 146 48 148 31 C161 42 164 60 151 78 Q147 83 143 78Z"/>
-<path d="M143 78 Q148 61 148 31" fill="none"/>
+  <div class="counter" id="counter">A SMALL BOUQUET</div>
+</section>
 
-<!-- center cosmos -->
-<g transform="translate(207 96)">
-<ellipse cy="-16" rx="7" ry="17"/>
-<ellipse cy="-16" rx="7" ry="17" transform="rotate(45)"/>
-<ellipse cy="-16" rx="7" ry="17" transform="rotate(90)"/>
-<ellipse cy="-16" rx="7" ry="17" transform="rotate(135)"/>
-<circle r="6" fill="#e9b5bf"/>
-</g>
-
-<!-- right wildflower -->
-<g transform="translate(271 80)">
-<ellipse cy="-13" rx="6" ry="13"/>
-<ellipse cy="-13" rx="6" ry="13" transform="rotate(60)"/>
-<ellipse cy="-13" rx="6" ry="13" transform="rotate(120)"/>
-<circle r="5" fill="#e9b5bf"/>
-</g>
-
-</g>
-
-<!-- vase -->
-<path d="M159 275 Q210 286 261 275 L251 365 Q247 389 210 393 Q173 389 169 365Z"
-fill="url(#vase)" stroke="#c77e91" stroke-width="2.2"/>
-
-<path d="M158 275 Q210 286 262 275 L266 287 Q210 300 154 287Z"
-fill="#f7dce2" stroke="#c77e91" stroke-width="2"/>
-
-<path d="M179 314 Q210 324 241 314" fill="none" stroke="#e6b6c0" stroke-width="1.5" stroke-linecap="round"/>
-<path d="M186 351 Q210 359 234 351" fill="none" stroke="#e6b6c0" stroke-width="1.2" stroke-linecap="round"/>
-<path d="M210 300 L210 378" stroke="#fff" stroke-opacity=".65" stroke-width="2"/>
-
-</svg>
-
-<div class="counter" id="counter">
-A SMALL BOUQUET · 3 FLOWERS
-</div>
-
-<p class="message" id="message">
-I hope these little flowers make your day a little softer.
-<span class="heart">♡</span>
+<p class="intro">
+  A little flower, a little thought, and a little reminder
+  that you are loved. Good Morning and I love you always ♡
 </p>
 
-<button id="add">Add today's flower</button>
+<section>
+  <h2>Our Flower Journal</h2>
+  <p class="section-note">
+    Little flowers and thoughts, collected just for you.
+  </p>
+  <div id="journal"></div>
+</section>
 
-<p class="hint">
-This is our first little preview. The flower counter is saved in this browser; we'll connect shared online storage before you send her the permanent link.
-</p>
+<section class="add-section">
+  <h2>Today's Little Flower</h2>
+  <p class="section-note">Leave a flower and a little piece of your heart.</p>
 
-<div class="footer">
-made with love, one day at a time ♡
-</div>
+  <form id="flowerForm">
+    <label for="date">Date</label>
+    <input type="date" id="date" required>
+
+    <label for="flower">Choose a flower</label>
+    <select id="flower">
+      <option value="🌷">Tulip</option>
+      <option value="🌼">Cosmos</option>
+      <option value="🌸">Cherry blossom</option>
+      <option value="🌻">Sunflower</option>
+      <option value="🌺">Hibiscus</option>
+      <option value="🪻">Lavender</option>
+      <option value="🌹">Rose</option>
+    </select>
+
+    <label for="message">Your little message</label>
+    <textarea id="message"
+      placeholder="Write something sweet for her..." required></textarea>
+
+    <button type="submit">Add to our little garden ♡</button>
+  </form>
+</section>
+
+<footer>
+  made with love, one day at a time ♡
+</footer>
 
 </main>
 
 <script>
-const key = 'flowers-for-you-count';
-let count = Number(localStorage.getItem(key) || 3);
+const STORAGE_KEY = "flowers-for-you-journal";
 
-function draw() {
-  document.getElementById('counter').textContent =
-    `A SMALL BOUQUET · ${count} FLOWER${count === 1 ? '' : 'S'}`;
+const initialEntries = [
+  {
+    date: "2026-11-17",
+    flower: "🌷",
+    message: "A little flower to remind you that you are loved. ♡"
+  },
+  {
+    date: "2026-11-18",
+    flower: "🌼",
+    message: "I hope you find something beautiful in today."
+  }
+];
+
+function getEntries() {
+  const saved = localStorage.getItem(STORAGE_KEY);
+  return saved ? JSON.parse(saved) : initialEntries;
 }
 
-draw();
+function saveEntries(entries) {
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(entries));
+}
 
-document.getElementById('add').addEventListener('click', () => {
-  count++;
-  localStorage.setItem(key, count);
-  draw();
+function formatDate(date) {
+  return new Date(date + "T12:00:00").toLocaleDateString(
+    "en-US",
+    { month: "long", day: "numeric", year: "numeric" }
+  );
+}
 
-  document.getElementById('message').innerHTML =
-    'Another little flower, just because you deserve it. <span class="heart">♡</span>';
+function render() {
+  const entries = getEntries().sort((a, b) =>
+    b.date.localeCompare(a.date)
+  );
+
+  document.getElementById("counter").textContent =
+    `A GROWING GARDEN · ${entries.length} LITTLE FLOWERS`;
+
+  const journal = document.getElementById("journal");
+
+  if (entries.length === 0) {
+    journal.innerHTML = '<p class="empty">Your little garden is waiting for its first flower. ♡</p>';
+    return;
+  }
+
+  journal.innerHTML = entries.map(entry => `
+    <article class="entry">
+      <div class="entry-date">${formatDate(entry.date)}</div>
+      <div class="entry-flower">${entry.flower}</div>
+      <div class="entry-message"></div>
+    </article>
+  `).join("");
+
+  const messageElements = journal.querySelectorAll(".entry-message");
+  entries.forEach((entry, index) => {
+    messageElements[index].textContent = entry.message;
+  });
+}
+
+document.getElementById("date").value =
+  new Date().toLocaleDateString("en-CA");
+
+document.getElementById("flowerForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  const date = document.getElementById("date").value;
+  const flower = document.getElementById("flower").value;
+  const message = document.getElementById("message").value.trim();
+
+  if (!date || !message) return;
+
+  const entries = getEntries();
+
+  if (entries.some(entry => entry.date === date)) {
+    alert("You've already added a flower for this date. ♡");
+    return;
+  }
+
+  entries.push({ date, flower, message });
+  saveEntries(entries);
+
+  document.getElementById("message").value = "";
+  render();
+
+  document.getElementById("journal").scrollIntoView({
+    behavior: "smooth"
+  });
 });
-</script>
 
+render();
+</script>
 </body>
 </html>
